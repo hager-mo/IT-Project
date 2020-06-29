@@ -1,0 +1,171 @@
+*
+{
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+  background-color: #0f0;
+  text-align: center;
+  height: 60px;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li
+{
+  width: 90px;
+  margin: 6px;
+  margin-top: 15px;
+  padding: 6px;
+  height: 30px;
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+  background: #2bab0d;
+  border-radius: 5px;
+}
+.sub-menu-1
+{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background: #0f0;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+  color: #b2ff00;
+}
+.sub-menu-2
+{
+  display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: #0f0;
+
+}
+/* img#logo
+{
+
+  position: absolute;
+  width: 100px;
+  height: 78px;
+} */
+/*GPA CALCULATOR -----------------------------------------------------------------------------------------------*/
+h1
+{
+  font-style: oblique;
+  font-family: cursive;
+  font-variant-ligatures: normal;
+  padding-left: 30px;
+}
+.box
+{
+  width: 370px;
+  padding: 40px;
+  position: absolute;
+  top: 3%;
+  left: 35%;
+  background: #ff9e9d;
+  opacity: 0.85;
+  border-radius: 20px;
+  text-align: center;
+}
+.box input[type="text"]
+{
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #F67280 ;
+  padding: 10px 10px;
+  width: 80px;
+  color: #eb2b50;
+  border-radius: 20px;
+  transition: 0.25s;
+}
+.box input[type="text"]:focus
+{
+  width: 100px;
+  border-color: #eeaeee;
+}
+.box input[type="BUTTON"]
+{
+  background: none;
+  display: absolute;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid #F67280 ;
+  padding: 10px 10px;
+  width: 100px;
+  color: #eb2b50;
+  border-radius: 30px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type="BUTTON"]:hover , .box input[type="SUBMIT"]:hover
+{
+  background: #dbf9db;
+}
+.box input[type="SUBMIT"]
+{
+  background: none;
+  display: absolute;
+  position: absolute;
+  bottom:0%;
+  right:20%;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid #F67280 ;
+  padding: 10px 10px;
+  width: 80px;
+  color: #eb2b50;
+  border-radius: 20px;
+  transition: 0.25s;
+  cursor: pointer;
+}

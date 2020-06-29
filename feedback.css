@@ -1,0 +1,180 @@
+*
+{
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+  background-color: #0f0;
+  text-align: center;
+  height: 60px;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li
+{
+  width: 90px;
+  margin: 6px;
+  margin-top: 15px;
+  padding: 6px;
+  height: 30px;
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+  background: #2bab0d;
+  border-radius: 5px;
+}
+.sub-menu-1
+{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background: #0f0;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+  color: #b2ff00;
+}
+.sub-menu-2
+{
+  display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: #0f0;
+
+}
+
+body
+{
+  background-image: url(background3.jpg);
+
+}
+header
+{
+    background-color: #222831;
+    background-image: linear-gradient(to left, #37414f, #222831);
+    padding: 7.5rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+h1
+{
+  margin: 10px;
+  font-weight: 200;
+  font-size: 4.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #000;
+  background: linear-gradient(to right, #00adb5, #fd3f4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form
+{
+  background-color:  gray;
+  opacity: 0.85;
+  width: 80%;
+  margin-left: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+div
+{
+  margin: 30px;
+  padding: 20px 80px;
+  background-color: white;
+  opacity: 0.75;
+}
+div label
+{
+  font-size: 20px;
+  font-family: cursive;
+}
+div label[for=radiobutton]
+{
+  padding: 40px;
+  font-family: cursive;
+}
+input[type="radio"]
+{
+  height: 21px;
+  margin: 20px;
+  background: #000;
+}
+textarea
+{
+  width: 94.5%;
+  margin-left: 29px;
+  border-radius: 30px;
+}
+input[type="button"]
+{
+  background: none;
+  display: absolute;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid #F67280 ;
+  padding: 15px 10px;
+  width: 200px;
+  color: #eb2b50;
+  background-color: #fff;
+  margin-left: 450px;
+  border-radius: 30px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+input[type="button"]
+{
+  background: #dbf9db;
+}

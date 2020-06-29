@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Feedbackform</title>
+    <link rel="stylesheet" href="feedback.css">
+    <header>
+        <h1>What do you think about this experience ?</h1>
+    </header>
+  </head>
+  <body>
+    <div class="menu-bar">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Level 1</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li class="hover-me"><a href="#">Semster 1</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">CS</a></li>
+                            <li><a href="#">IT</a></li>
+                            <li><a href="#">Physics</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">English 1</a></li>
+                            <li><a href="#">Maths 1</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="hover-me"><a href="#">Semster 2</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">PL 1</a></li>
+                            <li><a href="#">IS</a></li>
+                            <li><a href="#">Economics</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">English 2</a></li>
+                            <li><a href="#">Maths 2</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">level 2</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li class="hover-me"><a href="#">Semster 1</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">CS</a></li>
+                            <li><a href="#">IT</a></li>
+                            <li><a href="#">Physics</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">English 1</a></li>
+                            <li><a href="#">Maths 1</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="hover-me"><a href="#">Semster 2</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">PL 1</a></li>
+                            <li><a href="#">IS</a></li>
+                            <li><a href="#">Economics</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">English 2</a></li>
+                            <li><a href="#">Maths 2</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">level 3</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="#">major CS</a></li>
+                  <li><a href="#">major IS</a></li>
+                  <li><a href="#">major IT</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">level 4</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="#">sub CS</a></li>
+                  <li><a href="#">sub IS</a></li>
+                  <li><a href="#">sub IT</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Refrences</a></li>
+            <li><a href="#">Translation</a></li>
+            <li><a href="#">GPA</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </div>
+  <!-- feedback form -->
+  <form class="Feedbackform" action="index.html" method="post">
+    <div class="div1">
+      <label for="">expectations</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">High</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Normal</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Low</label>
+    </div>
+    <div class="div2">
+      <label for="">reality</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Excellent</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Good</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Bad</label>
+    </div>
+    <div class="div3">
+      <label for="">overall satisfaction</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Very satisfied</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Normal</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Not satisfied</label>
+    </div>
+    <div class="div4">
+      <label for="">Dealing with the site</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Hard</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">It's Okay</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Easy</label>
+    </div>
+    <div class="div5">
+      <label for="">Usefull</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Yes</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">Kinda</label>
+      <input type="radio" name="" value="">
+      <label for="radiobutton">No</label>
+    </div>
+    <textarea name="name" rows="10" cols="80" placeholder="Write what you think about this web"></textarea>
+    <input type="button" name="" value="Send" onclick="myalert()">
+    <script>
+      function myalert() {
+        alert("Your feedback was sent");
+      }
+    </script>
+    </form>
+  </body>
+</html>
