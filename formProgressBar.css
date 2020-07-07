@@ -1,0 +1,13 @@
+#MyBar {
+    position: absolute;
+    top:930px; 
+    display: block;
+    background: royalblue;
+    width:0; 
+   margin-left:230px;
+    z-index: 4;
+    color:white;
+    text-align: center;
+    text-shadow: none;
+    font-size: 27px;
+}

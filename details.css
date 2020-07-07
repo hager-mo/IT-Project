@@ -1,0 +1,382 @@
+*{
+    padding : 0; 
+    margin: 0;  
+    border: 0;    
+    max-height:2500px;    
+}
+
+body{
+    font-family: 'Agency FB Bold', arial;
+    font-size: 20px;
+        text-shadow: 4px 4px 4px #aaa;
+        padding : 0; 
+        margin: 0;  
+        border: 0;  
+        max-height:2500px; 
+
+        
+}
+
+/*
+####################################################################
+                        Start Header Section
+#####################################################################
+*/
+
+img#logo{
+    width: 190px;
+    height: 73px;  
+    position: absolute;
+}
+
+.menu{
+    background: #1B0D5A; 
+    color: white; 
+    text-align: center;
+    z-index:900; 
+}
+
+.menu ul {
+    
+    display : inline-flex; 
+    list-style:  none;
+    margin-left:150px; 
+}
+
+.menu ul li {
+    width: 90px; 
+    margin: 10px; 
+    padding: 15px; 
+}
+
+.menu ul li a  {
+    text-decoration: none;
+    color: white; 
+}
+
+ .menu ul li:hover{
+    background: #09568d; 
+    border-radius: 3px;
+}
+
+.submenu1{
+    display:none; 
+    z-index:1; 
+}
+.submenu1 ul li {
+    font-size: 16px;
+    text-shadow: none;
+}
+ .fa-angle-right{
+     float:right; 
+ }
+
+.menu ul li:hover .submenu1{
+    display: block ; 
+    position: absolute; 
+    background: #1B0D5A;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px; 
+}
+
+.menu ul li:hover .submenu1 ul li{
+    width :130px;
+    padding: 10px; 
+    border-bottom: 1px solid white ;
+    background: transparent; 
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .submenu1 ul li a:hover{
+    color: rgb(113, 195, 216);
+}
+.sub2{
+    display:none; 
+    z-index: 900;
+}
+.hover-me:hover .sub2{
+    position: absolute;
+    display:block; 
+    margin-top:-40px; 
+    margin-left:140px; 
+    background: #1B0D5A;
+    text-shadow: none;
+    z-index: 2000;
+}
+
+
+div.right{
+	float: right;
+	color: white; 
+	height: 68px; 
+    padding-right: 10px;
+    display: inline-flex;
+}
+
+button#LogIn {
+    width: 150px; 
+    height: 45px;
+	padding: 10px;
+	margin-left: 10px; 
+	margin-top: 13px; 
+	background: #4D0E64; 
+	color: white; 
+	border: 1px solid white; 
+	font-size: 15px; 
+	font-weight: 850; 
+}
+
+button#LogIn:hover {
+	color: #09568d; 
+	background: white; 
+}
+
+.progress{
+    width:100%; 
+    text-align: center;
+    align-items: center;
+    width:80%; 
+    height: 30px;
+    border-radius: 50px;
+    background: lightskyblue;
+    margin-bottom: 50px;}
+
+
+
+progress{
+    width:80%; 
+    height: 30px;
+    border-radius: 50px;
+    background: royalblue;
+    margin-bottom: 50px;
+}
+
+progress::-webkit-progress-value {
+    background: royalblue;
+    border-radius: 50px;
+    
+  }
+
+  
+
+span {
+    font-size: 30px; 
+}
+.ui-progressbar {
+    position: relative;
+  }
+  .ProgressBarLabel {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+
+  /*
+####################################################################
+                        Start content Section
+#####################################################################
+*/
+
+  .content{
+
+      width :70%;
+      margin-top: 200px; 
+      margin: auto; 
+      height:250px;
+      background-color: #eeeeee;  
+      border: 5px solid #4D0E64; 
+  }
+
+  .label{
+      margin:auto; 
+      text-align: center;
+      margin-bottom:20px ;
+      text-shadow: none;
+      color: #1B0D5A;
+  }
+
+  .chaptersL, .chaptersL2{
+      padding-top:15px;
+      margin-left:40px;
+      padding-bottom: 10px; 
+  }
+  div.chaptersL{
+      border-bottom: 1px solid #aaa ; 
+      margin:0; 
+      display: inline-block;
+  }
+  span.chaptersL, .chaptersL2, .checkL, .checkLU, .checkL2, .checkLU2{
+      border-right:2px solid #aaa; 
+      padding-right:435px; 
+      text-shadow: none; 
+      font-size: 22px;
+      font-weight: 800;
+  }
+  .checkL, .checkLU, .checkL2, .checkLU2{
+      padding:29px; 
+      padding-top: 15px;
+      padding-bottom: 10px;
+      font-size:16px; 
+  }
+  span.chapthersL2{
+      padding-right: 393px;
+  }
+
+  .checkLU,  .checkLU2{
+      border:none; 
+  }
+  checkL2{
+      padding-left:10px; 
+  }
+  form{
+      padding :0; 
+      overflow: auto;
+      height: 190px;
+
+  }
+
+ table {
+     padding:30px; 
+     padding-top:10px; 
+     padding-bottom:10px; 
+
+     position: relative;
+     text-shadow:none; 
+     overflow:auto; 
+ }
+
+ 
+
+ .check{
+     text-align: center;
+ }
+
+ input{
+display: block; 
+margin:auto;  
+border-left: 5px solid #aaa; 
+}
+td{
+    border-left: 2px solid #aaa; 
+    padding:10px; 
+    width: 2px;
+    text-align: center;
+
+}
+
+.chapters{
+    border-left:none;
+    text-align: left; 
+}
+th{
+    position: absolute;
+    top:-10px; 
+    
+    z-index: 200;
+}
+
+label.chapter{
+    margin-top:30px; 
+}
+  /*
+####################################################################
+                        End content Section
+#####################################################################
+*/
+
+  /*
+####################################################################
+                        Start doctors Section
+#####################################################################
+*/
+
+.contacts{
+    display: inline-block;
+     
+    width:100%; 
+}
+
+.doctors, .As{
+    vertical-align:top; 
+    border-radius:50%;
+    width:13%;
+    display: inline-block;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top:30px; 
+    text-align: center;
+}
+.contacts span{
+    padding-bottom: 100px;
+    font-size: 20px;
+    color:#1B0D5A;
+}
+.contacts p{
+    margin-bottom:50px; 
+}
+.doctors .co, .As .co{
+    width:17%;
+}
+.As{
+    margin-left: 80px;
+    margin-right:70px; 
+}
+
+
+  /*
+####################################################################
+                        End doctors Section
+#####################################################################
+*/
+  /*
+####################################################################
+                        Start footer Section
+#####################################################################
+*/
+
+.footer{
+    position : absolute;
+     top:2300px; 
+    width:100%; 
+    height:200px; 
+    border-top: 10px solid white;
+    background: rgb(12, 3, 53);  
+    color: red; 
+}
+
+img#footer {
+    margin:50px;
+    height:100px; 
+}
+
+p.f{
+    padding:90px;
+    padding-top:20px;
+    text-shadow: none;
+    font-size: 30px; 
+    line-height: 50px;
+    }
+
+span.f {
+       font-size: 20px;
+       margin-left: 25px;
+   }
+
+img.contact{
+    height:35px;
+    margin-left:40px;  
+}
+
+
