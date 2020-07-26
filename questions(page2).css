@@ -1,0 +1,355 @@
+/*
+####################################################################
+                        Start Header Section
+#####################################################################
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(138,138,138);
+}
+
+
+img#logo{
+    width: 190px;
+    height: 67px;  
+    position: absolute;
+}
+
+.menu{
+    background: #1B0D5A; 
+    color: white; 
+    text-align: center;
+    z-index:900; 
+}
+
+.menu ul {
+
+    display : inline-flex; 
+    list-style:  none;
+    margin-left:150px; 
+}
+
+.menu ul li {
+    width: 120px; 
+    margin: 10px; 
+    padding: 15px; 
+}
+.menu ul li a  {
+    text-decoration: none;
+    color: white; 
+}
+
+.menu ul li:hover{
+    background: #09568d; 
+    border-radius: 3px;
+}
+
+.submenu1{
+    display:none; 
+    z-index:1; 
+}
+.submenu1 ul li {
+    font-size: 16px;
+    text-shadow: none;
+}
+ .fa-angle-right{
+     float:right; 
+ }
+
+.menu ul li:hover .submenu1{
+    display: block ; 
+    position: absolute; 
+    background: #1B0D5A;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px; 
+}
+
+.menu ul li:hover .submenu1 ul li{
+    width :130px;
+    padding: 10px; 
+    border-bottom: 1px solid white ;
+    background: transparent; 
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .submenu1 ul li a:hover{
+    color: rgb(113, 195, 216);
+}
+.sub2{
+    display:none; 
+}
+.hover-me:hover .sub2{
+    position: absolute;
+    display:block; 
+    margin-top:-40px; 
+    margin-left:140px; 
+    background: #1B0D5A;
+    text-shadow: none;
+}
+
+
+div.right{
+	float: right;
+	color: white; 
+	height: 68px; 
+    padding-right: 10px;
+    display: inline-flex;
+}
+
+button#LogIn {
+    width: 150px; 
+    height: 45px;
+	padding: 10px;
+	margin-left: 10px; 
+	margin-top: 13px; 
+	background: #4D0E64; 
+	color: white; 
+	border: 1px solid white; 
+	font-size: 15px; 
+	font-weight: 850; 
+}
+
+button#LogIn:hover {
+	color: #09568d; 
+	background: white; 
+}
+
+
+
+/*
+####################################################################
+                        End Header Section
+#####################################################################
+*/
+
+/*#####################
+   start of search-box
+#######################
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background:rgb(88,83,155);
+}
+.search-box{
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #1B0D5A;
+    height: 45px;
+    /*border-radius: 40px;*/
+    padding: 20px; 
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+*/
+/*
+.search-box:hover > .search-btn{
+    background: black;
+}
+*/
+.search-btn{
+    color: white;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    background: #1B0D5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+
+/*
+   end of search box
+*/
+/*
+###############
+   END SIDEBAR
+###############
+*/ 
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    background: #1B0D5A;
+    height: 130px;
+    float: left;
+}
+.btn{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    height: 45px;
+    width: 45px;
+    background: #1B0D5A;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn.click{
+    left: 260px;
+}
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span:before{
+    content: '\f00d';
+    
+}
+.sidebar .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1B0D5A;
+    letter-spacing: 1px;
+    transition: left 0.4s ease;
+}
+.sidebar.show{
+    left: 0px;
+}
+nav ul{
+    background:#1B0D5A;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+nav ul li:last-child{
+    border-bottom: 1px solid rgb(255,255,255,0.05);
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li.active a{
+    color: cyan;
+    background: #1B0D5A;
+    border-left-color: cyan;
+}
+/*
+########################
+END SIDEBAR
+########################
+*/
+
+.plus-btn{
+    position:static;
+    top: 70px;
+    right: 100px;
+    height: 30px;
+    width: 45px;
+    background: #1B0D5A;
+    float: right;
+    text-align: center;
+}
+/*
+#############################
+START TEXT
+#############################
+*/
+.first{
+    background:#1B0D5A;
+    width: 700px;
+    height: 300px;
+    direction:ltr;
+    padding: 5px;
+    margin:  70px auto;
+    line-height:1px;
+    font-size: 15px;
+    color: white;
+    
+    
+}
+.first input{
+    width: 680px;
+    height: 50px;
+}
+/*
+##########################
+    start of footer
+##########################
+*/
+
+.footer{
+    width:100%; 
+    height:200px; 
+    border-top: 0px solid white;
+    background: rgb(12, 3, 53);  
+    color: red; 
+}
+
+img#footer {
+    margin:50px;
+    height:100px; 
+}
+
+p.f{
+    padding:100px;
+    padding-top:10px;
+    text-shadow: none;
+    font-size: 30px; 
+    line-height: 50px;
+    }
+
+span.f {
+       font-size: 20px;
+       margin-left: 25px;
+   }
+
+img.contact{
+    height:35px;
+    margin-left:40px;  
+}
+/*
+  end of footer
+*/ 
